@@ -1,7 +1,26 @@
 # Kickstarter_Project_Analysis
 
+### ✅️Project Overview:
+
+Crowdfunding is a way of raising money to finance projects and businesses. This project presents analysis of projects from Kickstarer based on various aspects such as the amount raised, categories, backers count, time range. The goal is to assess the success rate of the projects.
+
+
 ### ✅️Introduction
 In this notebook I will share my analysis of a dataset of roughly 366,000 Kickstarter projects. Kickstarter is one of the most popular platforms for promoting and bringing to life creative projects, from Music, Art, Film and Games, you name it. Each project does this by seeking funding from the Kickstarter crowd to support their idea and hopefully see it succeed. However, many projects fail and I will walk you through my analysis through data exploration with SQL to reveal insights into Kickstarter projects and their success and failure. I will then visualise the data in Power BI to present my findings and draw recommendations to my summary question, which you will find further down.
+
+### ⚒️Visualization Tool:- Excel,Power BI
+  ##### ⚒️MySQL
+
+### ⏬️Steps Involved
+
+  + **Data Understanding** : Assessing the dataset to understand kind of data, format, and identifying common columns in case of multiple tables.
+
+  + **Data Cleaning** : Utilized Power Query Editor to clean the data by removing null values and special characters.
+
+  + **Data Modelling** :Employed data modeling using Power Pivot, to establish relationships between three tables.
+
+  + **Data Visualization** : Created a interactive dashboard with six Key Performance Indicators (KPIs), four slicers, and charts using Pivot Tables.
+
 
 ### 📌Key Insights from the Dashboard
 
