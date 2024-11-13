@@ -26,11 +26,11 @@ In this notebook I will share my analysis of a dataset of roughly 366,000 Kickst
 
 + This dashboard gives an overview about one of the many crowdfunding platforms, Kickstarter. This is a platform for generating funds for a project.
 + Multiple outcomes for a project can be observed, viz., Successful, Failed, Live, Purged, Suspended and Cancelled. It can be observed that the success of a project is low in comparison to failure, suspension and cancellation put together, which is concerning for a business. Among the many reasons for suspension, lack of trust and non-transparency in disclosing relevant information about the project or the creator, as well as presenting others' work as one's own, are significant factors. 
-+ In the year 2009, there were only 1.31K projects, which have increased year on year.
++ In the year 2009, there were only 1310 projects, which have increased year on year.
 + There was a significant increase observed in 2014 and 2015, with peaks of 59.16K and 58.1K projects, respectively.
 + In the subsequent years, there was a slight decline to 46.16K projects, but the number of projects remained consistently high, staying above 37K.
 + By 2019, there was a drastic drop to only 1.52K projects.
-+ **Successful (140,313 projects)**: A large number of projects achieved their goals, but fewer than the failed ones, which accounts for 38.3% of the total projects.
++ **Successful (140,293 projects)**: A large number of projects achieved their goals, but fewer than the failed ones, which accounts for **38.3%** of the total projects.
 + **Initial Struggles (2009)**: The journey began with a low success rate of only 0.41%, highlighting initial challenges and learning curves.
 + **Rapid Growth (2014)**: Achieved a peak success rate of 13.73%, showcasing effective strategies and improved execution.
 + **Decline in Success (2019)**: Faced a steep decline to just 0.03%, necessitating an analysis of underlying issues and challenges.
@@ -46,7 +46,7 @@ In this notebook I will share my analysis of a dataset of roughly 366,000 Kickst
 ### Data Modelling
 <img width="641" alt="Screenshot 2024-11-13 160042" src="https://github.com/user-attachments/assets/6953f4bd-b599-463e-aa66-98d9a84cba9e">
 
-### Excel Dashboard
+### 📊Excel Dashboard
 <img width="855" alt="Screenshot 2024-11-13 163222" src="https://github.com/user-attachments/assets/9638bd59-0e4f-4580-a622-b38fd35fbc47">
 
 ### Conclusion 
