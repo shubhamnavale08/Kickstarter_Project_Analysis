@@ -46,6 +46,9 @@ In this notebook I will share my analysis of a dataset of roughly 366,000 Kickst
 ### Data Modelling
 <img width="641" alt="Screenshot 2024-11-13 160042" src="https://github.com/user-attachments/assets/6953f4bd-b599-463e-aa66-98d9a84cba9e">
 
+### Excel Dashboard
+<img width="909" alt="Screenshot 2024-11-13 161521" src="https://github.com/user-attachments/assets/a6516ef6-1da9-4468-8321-1e2459cb3e9e">
+
 ### Conclusion 
 The average success rate of a project at Kickstarter is 36% and the median goal is 5K Dollars (the median was calculated only for projects financed in dollars)
 An entrepreneur who wants to fund projects in the category of music or other art categories should consider starting a Kickstarter project because the average rate in these categories are above 55%. However, technology projects are less successful on this platform.
