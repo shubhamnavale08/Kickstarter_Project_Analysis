@@ -47,7 +47,7 @@ In this notebook I will share my analysis of a dataset of roughly 366,000 Kickst
 <img width="641" alt="Screenshot 2024-11-13 160042" src="https://github.com/user-attachments/assets/6953f4bd-b599-463e-aa66-98d9a84cba9e">
 
 ### Excel Dashboard
-<img width="909" alt="Screenshot 2024-11-13 161521" src="https://github.com/user-attachments/assets/a6516ef6-1da9-4468-8321-1e2459cb3e9e">
+<img width="855" alt="Screenshot 2024-11-13 163222" src="https://github.com/user-attachments/assets/9638bd59-0e4f-4580-a622-b38fd35fbc47">
 
 ### Conclusion 
 The average success rate of a project at Kickstarter is 36% and the median goal is 5K Dollars (the median was calculated only for projects financed in dollars)
