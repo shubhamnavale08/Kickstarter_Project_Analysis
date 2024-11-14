@@ -41,13 +41,13 @@ In this notebook I will share my analysis of a dataset of roughly 366,000 Kickst
 + **Future Strategies**: Focus on identifying and mitigating issues to enhance the success rate in the years to come.
 
 ### 📊Poewr BI Dashboard
-<img width="670" alt="Screenshot 2024-11-13 155130" src="https://github.com/user-attachments/assets/6600ebe9-2962-423f-b032-e46743680d14">
+<img width="800" alt="Screenshot 2024-11-13 155130" src="https://github.com/user-attachments/assets/6600ebe9-2962-423f-b032-e46743680d14">
 
 ### 📈Succsessful Project Dashboard
-<img width="672" alt="Screenshot 2024-11-13 155207" src="https://github.com/user-attachments/assets/328008a2-db3f-4b83-b748-983af4227d83">
+<img width="800" alt="Screenshot 2024-11-13 155207" src="https://github.com/user-attachments/assets/328008a2-db3f-4b83-b748-983af4227d83">
 
 ### Data Modelling
-<img width="641" alt="Screenshot 2024-11-13 160042" src="https://github.com/user-attachments/assets/6953f4bd-b599-463e-aa66-98d9a84cba9e">
+<img width="800" alt="Screenshot 2024-11-13 160042" src="https://github.com/user-attachments/assets/6953f4bd-b599-463e-aa66-98d9a84cba9e">
 
 ### 📊Excel Dashboard
 <img width="855" alt="Screenshot 2024-11-13 163222" src="https://github.com/user-attachments/assets/9638bd59-0e4f-4580-a622-b38fd35fbc47">
