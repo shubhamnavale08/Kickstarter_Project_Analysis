@@ -1,4 +1,4 @@
-# Kickstarter_Project_Analysis
+# kickstarter_Project_Analysis
 
 ### ✅️Project Overview:
 
