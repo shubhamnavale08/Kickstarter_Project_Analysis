@@ -1,0 +1,160 @@
+-- KICKSTARTER_PROJECT --
+
+USE CROWD_FUNDING;
+
+select * from projects;
+select * from category;
+select * from calendar;
+
+-- project ----
+
+-- Convert the Date Fields to Natural Time (Epoch to Human-Readable Date) --
+alter table projects
+add column date datetime;
+
+UPDATE projects
+SET date = FROM_UNIXTIME(created_at);
+
+
+
+-- Build a Calendar Table --
+
+CREATE TABLE calendar (
+    date datetime,
+    year INT,
+    month_no INT,
+    month_fullname VARCHAR(20),
+    quarter VARCHAR(2),
+    weekday_no INT,
+    weekday_name VARCHAR(10),
+    financial_month VARCHAR(5),
+    financial_quarter VARCHAR(5)
+);
+
+INSERT INTO calendar (date)
+SELECT DISTINCT FROM_UNIXTIME(created_at) AS natural_date
+FROM projects;
+
+select *from calendar;
+
+UPDATE calendar
+SET 
+    year = YEAR(date),
+    month_no = MONTH(date),
+    month_fullname = MONTHNAME(date),
+    quarter = CONCAT('Q', QUARTER(date)),
+    weekday_no = DAYOFWEEK(date),
+    weekday_name = DAYNAME(date),
+    financial_quarter = CASE 
+        WHEN MONTH(date) BETWEEN 4 AND 6 THEN 'FQ1'
+        WHEN MONTH(date) BETWEEN 7 AND 9 THEN 'FQ2'
+        WHEN MONTH(date) BETWEEN 10 AND 12 THEN 'FQ3'
+        WHEN MONTH(date) BETWEEN 1 AND 3 THEN 'FQ4'
+        END;
+
+SET SQL_SAFE_UPDATES = 0;
+SET SQL_SAFE_UPDATES = 1;
+
+select * from calendar;
+
+
+--  Convert the Goal Amount into USD--
+
+select goal*static_usd_rate as usd_goal
+from projects;
+
+
+-- Total Number of Projects by Outcome --
+
+select  count(*) as total_projects
+from projects;
+
+-- Total Projects by Location --
+
+select country,count(*) as Top_5_country_by_projects
+from projects
+group by country
+order by count(*) desc limit 5;
+
+-- Total Projects by Category --
+
+select c_name,count(name) as top_10_ct_by_project
+from category inner join projects
+on category.category_id=projects.category_id
+group by c_name
+order by count(name) desc limit 10;
+
+-- Total Projects by Year, Quarter, Month --
+
+select year,quarter,month_fullname,count(name) as project_by_year
+from calendar inner join projects
+on calendar.date=projects.date
+group by year,quarter,month_fullname
+order by count(name) desc;
+
+-- TOTAL SUCCESFUL PROJECTS COUNT--
+
+SELECT COUNT(*) AS successful_projects
+FROM projects
+WHERE state = 'successful';
+
+-- TOTAL PLEDGED --
+
+SELECT SUM(PLEDGED) AS TOTAL_PLEDGED
+FROM PROJECTS;
+
+-- TOTAL BACKERS COUNT --
+
+SELECT COUNT(BACKERS_COUNT) AS TOTAL_BACKERS
+FROM PROJECTS; 
+
+-- Successful Projects Amount Raised Number of Backers --
+
+SELECT state,COUNT(*)AS TOTAL_PROJECT,sum(pledged) AS total_amount_raised, COUNT(backers_count) AS total_backers
+FROM projects
+WHERE state = 'successful';	
+
+-- Avg Number of Days for successful projects --
+
+SELECT state,AVG(DATEDIFF(FROM_UNIXTIME(deadline), FROM_UNIXTIME(created_at))) AS avg_days
+FROM projects
+WHERE state = 'successful';
+
+-- Top Successful Projects Based on Number of Backers and Based on Amount Raised  --
+
+SELECT name, COUNT(backers_count) AS count_backers ,sum(pledged) as total_pledged
+FROM projects
+WHERE state = 'successful'
+GROUP BY name
+ORDER BY total_pledged DESC
+LIMIT 10;
+
+
+-- Top Successful category Based on Number of Backers -- 
+
+SELECT state,c_name, count(backers_count) AS total_backers
+FROM projects JOIN category 
+ON projects.category_id = category.category_id
+WHERE state = 'successful'
+GROUP BY c_name
+ORDER BY total_backers desc
+LIMIT 10;
+
+ -- Top Successful category Based on Amount Raised --
+ 
+SELECT state,c_name, SUM(pledged) AS total_pledged
+FROM projects JOIN category 
+ON projects.category_id = category.category_id
+WHERE state = 'successful'
+GROUP BY c_name
+ORDER BY total_pledged DESC
+LIMIT 10;
+
+-- Percentage of Successful Projects overall --
+
+SELECT (SUM(CASE WHEN state = 'successful' THEN 1 ELSE 0 END) / COUNT(*)) * 100 AS success_rate
+FROM projects;
+
+    
+       -- THANK YOU --
+       
