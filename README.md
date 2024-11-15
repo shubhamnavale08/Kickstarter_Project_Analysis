@@ -8,11 +8,12 @@ In this notebook I will share my analysis of a dataset of roughly 366,000 Kickst
 Crowdfunding is a way of raising money to finance projects and businesses. This project presents analysis of projects from Kickstarer based on various aspects such as the amount raised, categories, backers count, time range. The goal is to assess the success rate of the projects.
 
 ### ⚒️Visualization Tools
-+ **Excel** : Creating Reports,Data Cleaning
-+ **MySQL** : querie Analysis
-+ **PowerBI** : Creating Reports
++ **Excel** 
++ **MySQL** 
++ **PowerBI** 
 + **Power Query**
 + #### Database :- Excel
++ 
 ### ⏬️Steps Involved
 
   + **Data Understanding** : Assessing the dataset to understand kind of data, format, and identifying common columns in case of multiple tables.
