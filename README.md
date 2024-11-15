@@ -5,7 +5,7 @@ In this notebook I will share my analysis of a dataset of roughly 366,000 Kickst
 
 ### ✅️Project Overview:
 
-Crowdfunding is a way of raising money to finance projects and businesses. This project presents analysis of projects from Kickstarer based on various aspects such as the amount raised, categories, backers count, time range. The goal is to assess the success rate of the projects.
+Crowdfunding is a way of raising money to finance projects and businesses. This project presents analysis of projects from Kickstarter based on various aspects such as the amount raised, categories, backers count, time range. The goal is to assess the success rate of the projects.
 
 ### ⚒️Visualization Tools
 + **Excel** 
