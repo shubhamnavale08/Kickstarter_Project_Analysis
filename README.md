@@ -12,8 +12,8 @@ Crowdfunding is a way of raising money to finance projects and businesses. This 
 + **MySQL** 
 + **PowerBI** 
 + **Power Query**
-+ #### Database :- Excel
-+ 
++ **Database :- Excel**
+
 ### ⏬️Steps Involved
 
   + **Data Understanding** : Assessing the dataset to understand kind of data, format, and identifying common columns in case of multiple tables.
